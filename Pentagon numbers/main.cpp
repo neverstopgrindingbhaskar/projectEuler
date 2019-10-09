@@ -34,7 +34,7 @@ for(int i=1;i<=num;i++)
 ans=((3*i*i)-i)/2;
 v1.push_back(ans);
 }
-
+int flag=0;
 for(int i=0;i<v1.size()/2;i++)
 {
 for(int j=i+1;j<v1.size();j++)
@@ -48,6 +48,7 @@ if(v1[i]>=v1[j])
 num=v1[i]-v1[j];
 if(findDiff(v1,num,j-1))
 {
+flag=1;
 cout<<v1[i]<<" "<<v1[j]<<endl;
 break;
 }
@@ -57,13 +58,15 @@ else
 num=v1[j]-v1[i];
 if(findDiff(v1,num,j-1))
 {
+flag=1;
 cout<<v1[i]<<" "<<v1[j]<<endl;
 break;
 }
 }
 }
 }
+if(flag==1)
+break;
 }
-cout<<min<<endl;
 return 0;
 }
