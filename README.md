@@ -1,3 +1,1 @@
 # projectEuler
-IN THE NAME OF GOD
-These are solutions that are made within 30 mins, So these are not efficient solutions. You can actually create a better solution. Also my recommendation is to try the problem first, then look at my solution. HAPPY PROGRAMMING....
